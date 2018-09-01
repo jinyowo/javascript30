@@ -4,7 +4,8 @@
   "description": "### 🔥 30 Day Vanilla JS Coding Challenge ### 📚 Build 30 things in 30 days with 30 tutorials ### 🚫 No Frameworks×No Compilers×No Libraries×No Boilerplate",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "newDay": "./scripts/init_day.sh $1"
   },
   "repository": {
     "type": "git",
