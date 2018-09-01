@@ -1,0 +1,27 @@
+{
+  "name": "javascript30",
+  "version": "1.0.0",
+  "description": "### 🔥 30 Day Vanilla JS Coding Challenge ### 📚 Build 30 things in 30 days with 30 tutorials ### 🚫 No Frameworks×No Compilers×No Libraries×No Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinyowo/javascript30.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jinyowo/javascript30/issues"
+  },
+  "homepage": "https://github.com/jinyowo/javascript30#readme",
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "./scripts/add_issue_number_into_commit.sh $HUSKY_GIT_PARAMS"
+    }
+  },
+  "devDependencies": {
+    "husky": "^1.0.0-rc.13"
+  }
+}
