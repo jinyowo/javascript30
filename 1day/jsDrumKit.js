@@ -1,10 +1,16 @@
+document.addEventListener('DOMContentLoaded', init);
+
 function init() {
-	attachEvent();
+	const keys = document.querySelectorAll('.key');
+
+	keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+	window.addEventListener('keydown', onKeydown);
 }
 
-function attachEvent() {
-	window.addEventListener("keydown", onKeydown);
-	window.addEventListener("keyup", onKeyup);
+function removeTransition(e) {
+	if (e.propertyName !== 'transform') return;
+
+	this.classList.remove('playing');
 }
 
 function onKeydown(e) {
@@ -14,19 +20,9 @@ function onKeydown(e) {
 
 	if (key === null || sound === null) return;
 
-	key.classList.add("playing");
-	sound.load();
+	key.classList.add('playing');
+	sound.currentTime = 0; // rewind to the start. = sound.load();
 	sound.play();
-}
-
-function onKeyup(e) {
-	const pressedKeycode = e.keyCode;
-	const key = findKey(pressedKeycode);
-	const sound = findSound(pressedKeycode);
-
-	if (key === null || sound === null) return;
-
-	key.classList.remove("playing");
 }
 
 /**
@@ -34,7 +30,7 @@ function onKeyup(e) {
  * @param keycode
  */
 function findKey(keycode) {
-	return document.querySelector(`div.key[data-key="${keycode}"]`);
+	return document.querySelector(`div.key[data-key='${keycode}']`);
 }
 
 /**
@@ -42,7 +38,7 @@ function findKey(keycode) {
  * @param keycode
  */
 function findSound(keycode) {
-	return document.querySelector(`audio[data-key="${keycode}"]`);
+	return document.querySelector(`audio[data-key='${keycode}']`);
 }
 
-document.addEventListener("DOMContentLoaded", init);
+
