@@ -7,4 +7,4 @@
 ### [https://javascript30.com/](https://javascript30.com/)
 
 ### 과제 
-1. [Javascript Drum Kit](https://jinyowo.github.io/javascript30/1day)
+1. [Javascript Drum Kit](https://jinyowo.github.io/javascript30/1-day)

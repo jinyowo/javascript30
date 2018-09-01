@@ -1,4 +1,4 @@
-## #Javascript30 1day
+## #Javascript30 1-day
 ### Javascript Drum Kit
 
 ![Demo GIF](./demo.gif)
