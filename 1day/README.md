@@ -1,6 +1,8 @@
 ## #Javascript30 1day
 ### Javascript Drum Kit
 
+![Demo GIF](./demo.gif)
+
 **프로그램 조건**
 1. 키보드를 누르면 해당하는 사운드 재생
 2. 키보드를 누르면 키 애니메이션효과(키가 살짝 확대되고, 노란테두리 생김)
