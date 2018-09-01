@@ -1,46 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta content="charset=UTF-8">
-    <title>Javascript Drum Kit</title>
-    <link rel="stylesheet" href="style.css">
+	<meta content="charset=UTF-8">
+	<title>Javascript Drum Kit</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div data-key="65" class="key playing">
-    <kbd>A</kbd> <!-- kbd태그: 키보드 입력을 나타낼때 사용하는 태그. 별 다른 기능은 없고 {font-family: monospace;} css만 적용되어 있음 -->
-    <span class="sound">clap</span>
-</div>
-<div data-key="83" class="key">
-    <kbd>S</kbd>
-    <span class="sound">hihat</span>
-</div>
-<div data-key="68" class="key">
-    <kbd>D</kbd>
-    <span class="sound">kick</span>
-</div>
-<div data-key="70" class="key">
-    <kbd>F</kbd>
-    <span class="sound">openhat</span>
-</div>
-<div data-key="71" class="key">
-    <kbd>G</kbd>
-    <span class="sound">boom</span>
-</div>
-<div data-key="72" class="key">
-    <kbd>H</kbd>
-    <span class="sound">ride</span>
-</div>
-<div data-key="74" class="key">
-    <kbd>J</kbd>
-    <span class="sound">snare</span>
-</div>
-<div data-key="75" class="key">
-    <kbd>K</kbd>
-    <span class="sound">tom</span>
-</div>
-<div data-key="76" class="key">
-    <kbd>L</kbd>
-    <span class="sound">tink</span>
+<div class="keys">
+	<div data-key="65" class="key">
+		<kbd>A</kbd> <!-- kbd태그: 키보드 입력을 나타낼때 사용하는 태그. 별 다른 기능은 없고 {font-family: monospace;} css만 적용되어 있음 -->
+		<span class="sound">clap</span>
+	</div>
+	<div data-key="83" class="key">
+		<kbd>S</kbd>
+		<span class="sound">hihat</span>
+	</div>
+	<div data-key="68" class="key">
+		<kbd>D</kbd>
+		<span class="sound">kick</span>
+	</div>
+	<div data-key="70" class="key">
+		<kbd>F</kbd>
+		<span class="sound">openhat</span>
+	</div>
+	<div data-key="71" class="key">
+		<kbd>G</kbd>
+		<span class="sound">boom</span>
+	</div>
+	<div data-key="72" class="key">
+		<kbd>H</kbd>
+		<span class="sound">ride</span>
+	</div>
+	<div data-key="74" class="key">
+		<kbd>J</kbd>
+		<span class="sound">snare</span>
+	</div>
+	<div data-key="75" class="key">
+		<kbd>K</kbd>
+		<span class="sound">tom</span>
+	</div>
+	<div data-key="76" class="key">
+		<kbd>L</kbd>
+		<span class="sound">tink</span>
+	</div>
 </div>
 
 <audio data-key="65" src="sounds/cymbal.wav"></audio>
