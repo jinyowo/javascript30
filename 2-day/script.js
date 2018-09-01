@@ -8,29 +8,26 @@ function setDate() {
 function setHours(hour) {
 	let deg = 90;
 
-	if (hour > 12) {
-		hour -= 12;
-	}
-
-	deg += hour * 30;
+	deg += (hour / 12) * 360;
 	document.querySelector('.hour-hand').style.transform = 'rotate('+ deg +'deg)';
 }
 
 function setMinutes(min) {
 	let deg = 90;
 
-	deg += min * 6;
-	document.querySelector('.min-hand').style.transform = 'rotate('+ deg +'deg)';
+	deg += (min / 60) * 360;
+	document.querySelector('.min-hand').style.transform = `rotate(${deg}deg)`;
 }
 
 function setSeconds(second) {
 	let deg = 90;
 
-	deg += second * 6;
-	document.querySelector('.second-hand').style.transform = 'rotate('+ deg +'deg)';
+	deg += (second / 60) * 360;
+	document.querySelector('.second-hand').style.transform = `rotate(${deg}deg)`;
 }
 
 function startClock() {
+ 	setInterval(setDate, 1000)
 }
 setDate();
 startClock();
