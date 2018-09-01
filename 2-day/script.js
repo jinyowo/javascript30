@@ -1,33 +1,34 @@
+document.addEventListener('DOMContentLoaded', init);
+
+function init() {
+	setDate(); // 최초 실행
+	setInterval(setDate, 1000);
+}
 function setDate() {
-	const startDate = new Date();
-	setHours(startDate.getHours());
-	setMinutes(startDate.getMinutes());
-	setSeconds(startDate.getSeconds());
+	const now = new Date();
+
+	setHours(now.getHours());
+	setMinutes(now.getMinutes());
+	setSeconds(now.getSeconds());
 }
 
 function setHours(hour) {
-	let deg = 90;
+	const hourHand = document.querySelector('.hour-hand');
+	let deg = (hour / 12) * 360 + 90;
 
-	deg += (hour / 12) * 360;
-	document.querySelector('.hour-hand').style.transform = 'rotate('+ deg +'deg)';
+	hourHand.style.transform = `rotate(${deg}deg)`;
 }
 
 function setMinutes(min) {
-	let deg = 90;
+	const minHand = document.querySelector('.min-hand');
+	let deg = (min / 60) * 360 + 90;
 
-	deg += (min / 60) * 360;
-	document.querySelector('.min-hand').style.transform = `rotate(${deg}deg)`;
+	minHand.style.transform = `rotate(${deg}deg)`;
 }
 
 function setSeconds(second) {
-	let deg = 90;
+	const secondHand = document.querySelector('.second-hand');
+	let deg = (second / 60) * 360 + 90;
 
-	deg += (second / 60) * 360;
-	document.querySelector('.second-hand').style.transform = `rotate(${deg}deg)`;
+	secondHand.style.transform = `rotate(${deg}deg)`;
 }
-
-function startClock() {
- 	setInterval(setDate, 1000)
-}
-setDate();
-startClock();
