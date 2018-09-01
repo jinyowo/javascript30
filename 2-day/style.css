@@ -1,0 +1,39 @@
+html {
+    background: salmon;
+    text-align: center;
+}
+
+.clock {
+    border: 10px solid black;
+    height: 20em;
+    width: 20em;
+    border-radius: 50%;
+    margin: 50px auto;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform : translateY(-3px);
+}
+
+.hand {
+    width: 50%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%; /* 시계바늘의 회전축 조정 */
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.second-hand {
+    background: red;
+    height: 3px;
+}
