@@ -36,16 +36,12 @@ html {
 }
 
 .hand {
-    width: 40%;
-    height: 2%;
     background: black;
     position: absolute;
-    top: 49%;
-    left: 10%;
     transform-origin: 100%; /* 시계바늘의 회전축 조정 */
     transform: rotate(90deg);
-    transition: all 0.05s;
-    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    /*transition: all 0.05s;*/
+    /*transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);*/
 }
 
 .hour-hand {
@@ -54,11 +50,18 @@ html {
     top: 48.75%;
     left: 30%;
 }
+
+.min-hand {
+    width: 40%;
+    height: 2%;
+    top: 49%;
+    left: 10%;
+}
 .second-hand {
     background: red;
     height: 1%;
     width: 45%;
     top: 49.5%;
     left: 14%;
-    transform-origin: 80%; /* 시계바늘의 회전축 조정 */
+    transform-origin: 80%;
 }
