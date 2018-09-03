@@ -4,17 +4,18 @@ function init() {
 	setDate(); // 최초 실행
 	setInterval(setDate, 1000);
 }
+
 function setDate() {
 	const now = new Date();
 
-	setHours(now.getHours());
+	setHours(now.getHours(), now.getMinutes());
 	setMinutes(now.getMinutes());
 	setSeconds(now.getSeconds());
 }
 
-function setHours(hour) {
+function setHours(hour, min) {
 	const hourHand = document.querySelector('.hour-hand');
-	let deg = (hour / 12) * 360 + 90;
+	let deg = (hour / 12) * 360 + 90 + (min / 60) * 30;
 
 	hourHand.style.transform = `rotate(${deg}deg)`;
 }
