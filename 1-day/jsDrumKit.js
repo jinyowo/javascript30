@@ -21,7 +21,12 @@ function onKeydown(e) {
 
 	if (key === null || sound === null) return;
 
-	key.classList.add('playing');
+	if (key.classList.contains('playing')) {
+		key.classList.remove('playing');
+	} else {
+		key.classList.add('playing');
+	}
+
 	sound.currentTime = 0; // rewind to the start. = sound.load();
 	sound.play();
 }
