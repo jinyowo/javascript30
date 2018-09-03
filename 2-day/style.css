@@ -1,0 +1,67 @@
+html {
+    background: salmon;
+    text-align: center;
+}
+
+.clock {
+    height: 20em;
+    width: 20em;
+    border-radius: 50%;
+    background: #fff url(ios_clock.svg) no-repeat center;
+    background-size: 88%;
+    margin: 50px auto;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.clock:after {
+    background: #000;
+    height: 5%;
+    width: 5%;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.clock-face {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hand {
+    background: black;
+    position: absolute;
+    transform-origin: 100%; /* 시계바늘의 회전축 조정 */
+    transform: rotate(90deg);
+    /*transition: all 0.05s;*/
+    /*transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);*/
+}
+
+.hour-hand {
+    height: 2.5%;
+    width: 20%;
+    top: 48.75%;
+    left: 30%;
+}
+
+.min-hand {
+    width: 40%;
+    height: 2%;
+    top: 49%;
+    left: 10%;
+}
+.second-hand {
+    background: red;
+    height: 1%;
+    width: 45%;
+    top: 49.5%;
+    left: 14%;
+    transform-origin: 80%;
+}
