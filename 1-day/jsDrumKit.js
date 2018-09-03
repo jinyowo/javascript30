@@ -9,6 +9,7 @@ function init() {
 
 function removeTransition(e) {
 	if (e.propertyName !== 'transform') return;
+	if (!this.classList.contains('playing')) return; // playing 클래스가 지워지면서 transform이벤트가 한 번 더 발생하는 경우 예외처리
 
 	this.classList.remove('playing');
 }
