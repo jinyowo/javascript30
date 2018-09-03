@@ -8,3 +8,4 @@
 
 ### 과제 
 1. [Javascript Drum Kit](https://jinyowo.github.io/javascript30/1-day)
+2. [CSS + JS Clock](https://jinyowo.github.io/javascript30/2-day)
