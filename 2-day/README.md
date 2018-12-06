@@ -69,8 +69,7 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
 
 * 변하는 속성 전부에 1s 지연시간을 줌.
 
-<iframe height='306' scrolling='no' title='oPevGo' src='https://codepen.io/jinyowo/embed/oPevGo/?height=306&theme-id=dark&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/jinyowo/pen/oPevGo/'>oPevGo</a> by Heo Jin (<a href='https://codepen.io/jinyowo'>@jinyowo</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+[![transition](./img/transition.png)](https://codepen.io/jinyowo/embed/oPevGo/?height=306&theme-id=dark&default-tab=css,result&embed-version=2)
 
 #### transition-timing-function
 - 속성의 중간값을 계산하는 방법을 정의하는 함수를 명시. cubic-bezier를 정의하는 네 점으로 명시
