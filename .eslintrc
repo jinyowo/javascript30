@@ -1,0 +1,41 @@
+{
+    "extends": "airbnb-base",
+    "rules": {
+        "quotes": [
+            "error",
+            "single",
+            {
+                "allowTemplateLiterals": true
+            }
+        ],
+        "no-trailing-spaces": [
+            "error",
+            {
+                "skipBlankLines": true
+            }
+        ],
+        "max-len": [
+            "off"
+        ],
+        "no-plusplus": [
+            "off"
+        ],
+        "no-underscore-dangle": [
+            "error",
+            {
+                "allowAfterThis": true
+            }
+        ],
+        "object-curly-newline": [
+            "error",
+            {
+                "multiline": true
+            }
+        ]
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true
+    }
+}
